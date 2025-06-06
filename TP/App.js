@@ -13,6 +13,7 @@ import ConfiguracionScreen from './Screens/ConfiguracionScreen';
 import NotificacionesScreen from './Screens/NotificacionesScreen';
 import CuentaScreen from './Screens/CuentaScreen';
 import PantallaScreen from './Screens/PantallaScreen';
+import CorreosScreen from './Screens/CorreosScreen';
 
 const HomeStack = createNativeStackNavigator();
 function HomeStackScreen() {
@@ -49,6 +50,7 @@ function NotificacionesStackScreen() {
   return (
     <NotificacionesStack.Navigator>
       <NotificacionesStack.Screen name="Notificaciones Home" component={NotificacionesScreen } />
+      <NotificacionesStack.Screen name="Correos" component={CorreosScreen} />
     </NotificacionesStack.Navigator>
   );
 }

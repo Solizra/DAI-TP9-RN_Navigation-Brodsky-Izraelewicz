@@ -18,7 +18,6 @@ export default function LoginScreen() {
       Alert.alert('Error', 'Por favor, ingresa nombre y teléfono');
       return;
     }
-    // Navegamos enviando los datos a Cuenta
     navigation.navigate('Cuenta', { nombre, telefono });
   };
 
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 25,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)', // fondo oscuro para buen contraste
+    backgroundColor: 'rgba(0,0,0,0.5)', 
   },
   titulo: {
     fontSize: 28,

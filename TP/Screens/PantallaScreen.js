@@ -13,7 +13,7 @@ export default function PantallaScreen() {
 
   return (
     <View style={estilos.container}>
-      <Text style={estilos.text}>
+      <Text style={estilos.titulo}>
         ¡Estás en {modoOscuro ? 'modo oscuro' : 'modo claro'}!
       </Text>
 
@@ -35,19 +35,24 @@ const estilosClaro = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
+  titulo: {
+    fontSize: 28,
+    fontWeight: 'bold',
     color: '#000',
-    fontSize: 18,
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#007bff',
-    padding: 12,
-    borderRadius: 8,
+    backgroundColor: '#00b894',
+    paddingVertical: 14,
+    borderRadius: 12,
+    width: '100%',
+    alignItems: 'center',
+    marginTop: 10,
   },
   buttonText: {
     color: '#fff',
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });
 
@@ -58,18 +63,23 @@ const estilosOscuro = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
+  titulo: {
+    fontSize: 28,
+    fontWeight: 'bold',
     color: '#fff',
-    fontSize: 18,
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#f1c40f',
-    padding: 12,
-    borderRadius: 8,
+    backgroundColor: '#00b894',
+    paddingVertical: 14,
+    borderRadius: 12,
+    width: '100%',
+    alignItems: 'center',
+    marginTop: 10,
   },
   buttonText: {
-    color: '#000',
+    color: '#fff',
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });

@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 25,
-    backgroundColor: 'rgba(0,0,0,0.5)', // Oscurece el fondo para mejor contraste
+    backgroundColor: 'rgba(0,0,0,0.5)', 
   },
   titulo: {
     fontSize: 28,
